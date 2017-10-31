@@ -121,7 +121,7 @@ self.use_udphp = true;
  * Use 95.85.63.183 if you have no server. It is only for debugging!
  * @type string
  */
-self.udphp_master_ip = "	213.202.228.105";
+self.udphp_master_ip = "213.202.228.105";
 
 /** 
  * WHEN USING GMnet PUNCH:
@@ -200,7 +200,7 @@ self.udphp_client_id = 0;
 //The UDP server or socket created by the client/server creation scripts
 self.socketOrServer = -1;
 //Server ip [ONLY FOR CLIENT]
-self.server_ip = "";
+self.server_ip = "213.202.228.105";
 //Server port [ONLY FOR CLIENT]
 self.server_port = 0;
 //Buffer used for everything
@@ -212,7 +212,7 @@ self.playermap = -1;
 //Kickmap - When clients will be forced to be kicked <ip:port> -> <time till kicked in steps> [Only server!]
 self.kickmap = -1;
 //Local playerhash.
-self.playerhash = "";
+self.playerhash = "6510";
 //Timeout counter for client
 self.client_timeout = 0;
 //True if a client was running but stooped

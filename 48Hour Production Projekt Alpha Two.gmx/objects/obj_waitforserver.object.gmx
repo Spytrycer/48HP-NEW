@@ -50,8 +50,9 @@
             <kind>1</kind>
             <string>var playerlist = htme_getPlayers();
 if (ds_list_size(playerlist) &gt; 1)
-{
-room_goto(room_test);
+{   
+    
+    room_goto(room_test);
 }
 </string>
           </argument>
