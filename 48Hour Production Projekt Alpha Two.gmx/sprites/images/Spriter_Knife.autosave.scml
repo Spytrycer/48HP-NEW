@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r11">
+    <folder id="0">
+        <file id="0" name="spr_collect_Knife_0.png" width="128" height="128" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="spr_blingbling_1.png" width="16" height="16" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="spr_blingbling_0.png" width="16" height="16" pivot_x="0" pivot_y="1"/>
+        <file id="3" name="spr_blingbling_3.png" width="16" height="16" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <animation id="0" name="NewAnimation" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="248">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="2" key="0" z_index="1"/>
+                </key>
+                <key id="2" time="493">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="2" key="1" z_index="1"/>
+                </key>
+                <key id="3" time="501">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                </key>
+                <key id="4" time="621">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                </key>
+                <key id="5" time="900">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="spr_collect_Knife_0">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="-67.716846" y="63.451613"/>
+                </key>
+                <key id="1" time="501" spin="0">
+                    <object folder="0" file="0" x="-67.875576" y="60.91193"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="spr_blingbling_1">
+                <key id="0" time="621" spin="-1">
+                    <object folder="0" file="1" x="-3.712871" y="40.09901"/>
+                </key>
+                <key id="1" time="900">
+                    <object folder="0" file="1" x="-1.980198" y="41.584158" angle="345.618605"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="spr_blingbling_3">
+                <key id="0" time="248" spin="0">
+                    <object folder="0" file="3" x="-9.158416" y="11.138614"/>
+                </key>
+                <key id="1" time="493" spin="0">
+                    <object folder="0" file="3" x="-9.90099" y="9.405941"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>
