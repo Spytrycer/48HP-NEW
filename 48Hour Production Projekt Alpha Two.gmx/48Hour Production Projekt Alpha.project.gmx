@@ -291,25 +291,35 @@
     </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_network_control</object>
-    <object>objects\obj_waitforclient</object>
-    <object>objects\obj_menu</object>
-    <object>objects\obj_Falle2</object>
+    <objects name="Networking">
+      <object>objects\obj_menu</object>
+      <object>objects\obj_waitforclient</object>
+      <object>objects\obj_network_control</object>
+      <object>objects\obj_mapgenerator</object>
+      <object>objects\obj_controller_test</object>
+      <object>objects\obj_mapgenerator</object>
+    </objects>
+    <objects name="Items">
+      <object>objects\obj_explosion</object>
+      <object>objects\obj_Falle1</object>
+      <object>objects\obj_block_test</object>
+      <object>objects\obj_Falle2</object>
+      <object>objects\obj_Falle1_active</object>
+      <objects name="Collect">
+        <object>objects\obj_collect_Sword</object>
+        <object>objects\obj_collect_Spitzhacke</object>
+        <object>objects\obj_collect_Falle2</object>
+        <object>objects\obj_collect_Knife</object>
+        <object>objects\obj_collect_Bomerang</object>
+        <object>objects\obj_collect_Falle1</object>
+      </objects>
+    </objects>
     <object>objects\obj_player</object>
-    <object>objects\obj_block_test</object>
-    <object>objects\obj_controller_test</object>
-    <object>objects\obj_collect_Falle1</object>
-    <object>objects\obj_collect_Falle2</object>
-    <object>objects\obj_mapgenerator</object>
     <object>objects\obj_gray_bg</object>
+    <object>objects\obj_Bush</object>
+    <object>objects\obj_Gras</object>
     <object>objects\obj_block_128</object>
-    <object>objects\obj_collect_Bomerang</object>
-    <object>objects\obj_collect_Knife</object>
-    <object>objects\obj_collect_Spitzhacke</object>
-    <object>objects\obj_collect_Sword</object>
-    <object>objects\obj_Falle1</object>
-    <object>objects\obj_explosion</object>
-    <object>objects\obj_Falle1_active</object>
+    <object>objects\obj_Tree</object>
     <objects name="htme_demo">
       <objects name="game">
         <object>objects\htme_obj_wall</object>
