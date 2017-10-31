@@ -83,6 +83,11 @@ Cavechunk_tunnelsize_range2 = (irandom(5)+5);
 
 Cavechunk_movementrange = (irandom(3)+2);
 
+//Trees
+Treebiom_length_range1 = 12;
+Treebiom_length_range2 = 24;
+
+
 
 
 </string>
@@ -368,6 +373,9 @@ while(Cursorheight &lt; Mapheight)
 /////////////////////////////////////////
 //    Drawing Gras &amp; Trees $ Bushes    //
 
+var treebiom_bool;
+var treebiom_length = 0;
+
 //Start Drawing
 var xheight;
 for(xheight = 0; xheight &lt; Mapheight; xheight += 1)
@@ -377,11 +385,81 @@ for(xheight = 0; xheight &lt; Mapheight; xheight += 1)
     {
         //is it a block
         if(Map[xwidth,xheight]==1){
-            //is there no block on top
-            if(Map[xwidth,xheight-1]==0){
-                //Gras
-                Map[xwidth,xheight-1]=2
+            //////////////
+            //   Gras   //
+            //ist Top out of range?
+            if((xheight-1)&gt;0){
+                //is there no block on top
+                if(Map[xwidth,xheight-1]==0){
+                    //Gras
+                    Map[xwidth,xheight-1]=2
+                }
             }
+            //   Gras   //
+            //////////////
+            
+            
+            ////////////////
+            //   Bäume   //
+            if(treebiom_length &lt;= 0){
+                treebiom_bool = (irandom(1)==0);
+                treebiom_length = irandom(Treebiom_length_range2-Treebiom_length_range1)-Treebiom_length_range1;
+            }
+
+            //Is there a block left and right 
+            if((xwidth-1)&gt;0 and (xwidth+1)&lt;Mapwidth){
+                //Is there at least one space up
+                if((xheight-1)&gt;0){
+                    //ist links und rechts von mir ein Block
+                    if(Map[xwidth-1,xheight]==1 and Map[xwidth+1,xheight]==1){
+                        //ist obenlink, obenrechts, und oben frei? (Gras oder leer)
+                        if(Map[xwidth-1,xheight-1]==0 or Map[xwidth-1,xheight-1]==2
+                        and Map[xwidth+1,xheight-1]==0 or Map[xwidth+1,xheight-1]==2
+                        and Map[xwidth+0,xheight-1]==0 or Map[xwidth+0,xheight-1]==2
+                        )
+                        {
+                            if(treebiom_bool){
+                                //Setzte da oben eine Pflaze //Hier muss 50 50 busch oder baum hin
+                                Map[xwidth+1,xheight-1] = 3
+                                treebiom_length--
+                            }else{
+                                treebiom_length--
+                            }
+                        }
+                    }   
+                }
+            }
+            //   Bäume   //
+            ///////////////
+            
+            ///////////////
+            //   Bush    //
+            
+            //Is there a block left and right 
+            if((xwidth-1)&gt;0 and (xwidth+1)&lt;Mapwidth){
+                //Is there at least one space up
+                if((xheight-1)&gt;0){
+                    //ist links und rechts von mir ein Block
+                    if(Map[xwidth-1,xheight]==1 and Map[xwidth+1,xheight]==1){
+                        //ist obenlink, obenrechts, und oben frei? (Gras oder leer)
+                        if(Map[xwidth-1,xheight-1]==0 or Map[xwidth-1,xheight-1]==2
+                        and Map[xwidth+1,xheight-1]==0 or Map[xwidth+1,xheight-1]==2
+                        and Map[xwidth+0,xheight-1]==0 or Map[xwidth+0,xheight-1]==2
+                        )
+                        {
+                            //Setzte da oben eine Pflaze //Hier muss 50 50 busch oder baum hin
+                            if(irandom(100)&lt;= 20){
+                                Map[xwidth+1,xheight-1] = 4
+                            }
+                        }
+                    }   
+                }
+            }
+            
+            //   Bush    //
+            ///////////////
+            
+            
         }
     }
 }
@@ -418,8 +496,24 @@ for(xheight = 0; xheight &lt; Mapheight; xheight += 1)
         {
             instance_create(coordinate_x, coordinate_y, obj_Gras);
         }
-    
-        
+        else if (Map[xwidth,xheight] == 3)
+        {
+            if(xheight &lt;= (Mapheight*0.8)){
+                if(irandom(100) &lt;= 60){
+                    treechance = irandom(100);
+                    if(treechance &lt;= 50){
+                        instance_create(coordinate_x, coordinate_y, obj_Tree);
+                    }else if(treechance &gt;= 50 and treechance &lt;= 92){
+                        instance_create(coordinate_x, coordinate_y, obj_Tree_Medium);
+                    }else{
+                        instance_create(coordinate_x, coordinate_y, obj_Tree_Big);
+                    }
+                }
+            }
+        }
+        else if (Map[xwidth,xheight] == 4){
+            instance_create(coordinate_x, coordinate_y, obj_Bush);
+        }
     }
 }
 
