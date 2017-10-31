@@ -45,6 +45,16 @@
       <sprite>sprites\spr_invindicate</sprite>
     </sprites>
     <sprite>sprites\spr_gray_test</sprite>
+<<<<<<< HEAD
+=======
+    <sprites name="htme_demo">
+      <sprite>sprites\htme_spr_wall</sprite>
+      <sprite>sprites\htme_spr_player</sprite>
+      <sprite>sprites\htme_spr_door</sprite>
+      <sprite>sprites\htme_logo</sprite>
+    </sprites>
+    <sprite>sprites\spr_player_new</sprite>
+>>>>>>> 35e9ac8b29465c693c2450cf7137ccd313a5f82f
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
