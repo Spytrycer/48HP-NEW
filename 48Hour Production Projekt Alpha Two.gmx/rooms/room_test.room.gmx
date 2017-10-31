@@ -124,7 +124,10 @@
     <instance objName="obj_block_test" x="768" y="128" name="inst_9EDA1499" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_test" x="640" y="64" name="inst_2CD3CA46" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block_test" x="672" y="96" name="inst_683E4C74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="96" y="64" name="inst_0EB0F423" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collect_Falle1" x="448" y="64" name="inst_A7741298" locked="0" code="" scaleX="0.200000002980232" scaleY="0.200000002980232" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collect_Falle1" x="512" y="64" name="inst_F3F1A567" locked="0" code="" scaleX="0.200000002980232" scaleY="0.200000002980232" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collect_Falle1" x="576" y="64" name="inst_F33CB9D8" locked="0" code="" scaleX="0.200000002980232" scaleY="0.200000002980232" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="64" y="64" name="inst_90C7330A" locked="0" code="" scaleX="1.46875" scaleY="1.625" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -295,10 +295,19 @@
     <objects name="Networking">
       <object>objects\obj_menu</object>
       <object>objects\obj_waitforclient</object>
+      <object>objects\obj_waitforserver</object>
       <object>objects\obj_network_control</object>
       <object>objects\obj_mapgenerator</object>
       <object>objects\obj_controller_test</object>
-      <object>objects\obj_mapgenerator</object>
+      <object>objects\htme_obj_lanlobbydemo</object>
+      <objects name="game">
+        <object>objects\htme_obj_wall</object>
+        <object>objects\htme_obj_player</object>
+        <object>objects\htme_obj_time</object>
+        <object>objects\htme_obj_playerlist</object>
+        <object>objects\htme_obj_door</object>
+        <object>objects\htme_obj_chat</object>
+      </objects>
     </objects>
     <objects name="Items">
       <object>objects\obj_explosion</object>
@@ -321,41 +330,23 @@
     <object>objects\obj_Gras</object>
     <object>objects\obj_block_128</object>
     <object>objects\obj_Tree</object>
-    <objects name="htme_demo">
-      <objects name="game">
-        <object>objects\htme_obj_wall</object>
-        <object>objects\htme_obj_player</object>
-        <object>objects\htme_obj_time</object>
-        <object>objects\htme_obj_playerlist</object>
-        <object>objects\htme_obj_door</object>
-        <object>objects\htme_obj_chat</object>
-      </objects>
-      <object>objects\htme_obj_lanlobbydemo</object>
-    </objects>
     <objects name="htme">
       <object>objects\obj_htme</object>
     </objects>
     <objects name="udphp_demo">
       <object>objects\obj_udphphtme_lobby</object>
     </objects>
-    <object>objects\obj_Bush</object>
-    <object>objects\obj_Gras</object>
-    <object>objects\obj_Tree</object>
     <object>objects\obj_Tree_Big</object>
     <object>objects\obj_Tree_Medium</object>
-    <object>objects\obj_player_test</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room_generator</room>
     <room>rooms\htme_rom_menu</room>
     <room>rooms\htme_lanlobby</room>
     <room>rooms\htme_rom_demo2</room>
     <room>rooms\htme_rom_demo</room>
     <room>rooms\htme_rom_connecting</room>
     <room>rooms\room_test</room>
-    <rooms name="udphp_demo">
-      <room>rooms\udphhtme_lobby</room>
-    </rooms>
+    <room>rooms\room_generator</room>
     <room>rooms\room_waiting</room>
   </rooms>
   <help>

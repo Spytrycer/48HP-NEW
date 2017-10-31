@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Enable debug overlay
-show_debug_overlay(true);
+show_debug_overlay(false);
 </string>
           </argument>
         </arguments>
@@ -76,7 +76,7 @@ var port = real(get_string("On which port should the server listen?","6510"));
 
 //Setup server, on success start game, on failure end the game.
 if (htme_serverStart(port,32)) {
-    room_goto(room_test);
+    room_goto(room_waiting);
 } else {
     show_message("Could not start server! Check your network configuration!");
     game_end();
