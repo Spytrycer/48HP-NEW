@@ -294,10 +294,10 @@
     <objects name="Networking">
       <object>objects\obj_menu</object>
       <object>objects\obj_waitforclient</object>
+      <object>objects\obj_waitforserver</object>
       <object>objects\obj_network_control</object>
       <object>objects\obj_mapgenerator</object>
       <object>objects\obj_controller_test</object>
-      <object>objects\obj_mapgenerator</object>
       <object>objects\htme_obj_lanlobbydemo</object>
       <objects name="game">
         <object>objects\htme_obj_wall</object>
