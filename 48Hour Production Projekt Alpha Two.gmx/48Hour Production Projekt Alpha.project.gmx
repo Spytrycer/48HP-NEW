@@ -70,6 +70,8 @@
       <sprite>sprites\spr_Baum</sprite>
       <sprite>sprites\spr_Gebuesch</sprite>
       <sprite>sprites\spr_Gras</sprite>
+      <sprite>sprites\spr_baum_big</sprite>
+      <sprite>sprites\spr_baum_medium</sprite>
     </sprites>
     <sprites name="Inv_Items">
       <sprite>sprites\spr_inventory</sprite>
@@ -333,6 +335,8 @@
     <objects name="udphp_demo">
       <object>objects\obj_udphphtme_lobby</object>
     </objects>
+    <object>objects\obj_Tree_Big</object>
+    <object>objects\obj_Tree_Medium</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\htme_rom_menu</room>
