@@ -70,6 +70,8 @@
       <sprite>sprites\spr_Baum</sprite>
       <sprite>sprites\spr_Gebuesch</sprite>
       <sprite>sprites\spr_Gras</sprite>
+      <sprite>sprites\spr_baum_big</sprite>
+      <sprite>sprites\spr_baum_medium</sprite>
     </sprites>
     <sprites name="Inv_Items">
       <sprite>sprites\spr_inventory</sprite>
@@ -325,15 +327,21 @@
     <objects name="udphp_demo">
       <object>objects\obj_udphphtme_lobby</object>
     </objects>
+    <object>objects\obj_Bush</object>
+    <object>objects\obj_Gras</object>
+    <object>objects\obj_Tree</object>
+    <object>objects\obj_Tree_Big</object>
+    <object>objects\obj_Tree_Medium</object>
+    <object>objects\obj_player_test</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room_generator</room>
     <room>rooms\htme_rom_menu</room>
     <room>rooms\htme_lanlobby</room>
     <room>rooms\htme_rom_demo2</room>
     <room>rooms\htme_rom_demo</room>
     <room>rooms\htme_rom_connecting</room>
     <room>rooms\room_test</room>
-    <room>rooms\room_generator</room>
     <rooms name="udphp_demo">
       <room>rooms\udphhtme_lobby</room>
     </rooms>

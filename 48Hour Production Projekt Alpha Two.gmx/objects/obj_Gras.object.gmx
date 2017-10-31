@@ -28,40 +28,6 @@
             <string>image_speed = 0;
 image_index = irandom(9);
 
-if(place_meeting(x,y+32,obj_block_test) == false){
-    instance_destroy();
-}
-
-wait = 20;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>wait--
-
-if(wait &lt;= 0){
-    if(position_meeting(x,y+32,obj_block_test) == false){
-        instance_destroy();
-    }
-}
 </string>
           </argument>
         </arguments>
