@@ -45,7 +45,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Mapwidth = 200;
+            <string>Mapwidth = 400;
 Mapheight = 120;
 Mapmiddle = Mapheight / 2;
 
